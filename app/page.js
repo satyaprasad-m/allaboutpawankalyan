@@ -29,8 +29,8 @@ export default function Home() {
   
   return (
     <main className="flex items-center flex-col">
-      {events.map((event)=>{
-        return <div className="border-b w-2/3 border-gray-500 border-opacity-40 pb-1 m-4">
+      {events.map((index,event)=>{
+        return <div key={index} className="border-b w-2/3 border-gray-500 border-opacity-40 pb-1 m-4">
           <p className="flex justify-between">
             <span className="font-bold">{event.title}</span> <span className="font-bold text-sm bg-blue-200 rounded-full px-2 text-center">{event.type}</span> 
           </p>
